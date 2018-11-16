@@ -15,7 +15,7 @@ Here's what you need to do
   - Allow the user to select one of multiple themes that you implement.
   - Implement a _history_ functionality: You should be able to see previous calculation results, and select an old result to be able to use it in your continued calculations.
   - Allow the users to use the physical keyboard to do calculations
-  - Add testing to the website (you decide what types of tests and how you want to do it)
+  - Add some more testing to the website (you decide what you feel is missing, what types of tests and how you want to do it)
 
 Good luck!
 
