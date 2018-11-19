@@ -66,6 +66,27 @@ export default function calculate(obj, buttonName) {
     return {};
   }
 
+  if (buttonName === "√") {
+    if (obj.operation && obj.next) {
+      const result = operate(obj.total, obj.next, obj.operation);
+      return {
+        total: Big(result)
+          .sqrt()
+          .toString(),
+        next: null,
+        operation: null,
+      };
+    }
+    if (obj.next) {
+      return {
+        next: Big(obj.next)
+          .sqrt()
+          .toString(),
+      };
+    }
+    return {};
+  }
+
   if (buttonName === ".") {
     if (obj.next) {
       // ignore a . if the next number already has one
